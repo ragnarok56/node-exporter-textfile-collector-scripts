@@ -25,8 +25,11 @@ SMARTCTLAWK
 smartmon_attrs="$(
   cat <<'SMARTMONATTRS'
 airflow_temperature_cel
+available_reservd_space
+bad_blk_ct_erl/lat
 command_timeout
 current_pending_sector
+crc_error_count
 end_to_end_error
 erase_fail_count
 g_sense_error_rate
@@ -35,7 +38,9 @@ host_reads_32mib
 host_reads_mib
 host_writes_32mib
 host_writes_mib
+lifetime_writes_gib
 load_cycle_count
+maxavgerase_ct
 media_wearout_indicator
 nand_writes_1gib
 offline_uncorrectable
@@ -49,9 +54,11 @@ reallocated_sector_ct
 reported_uncorrect
 runtime_bad_block
 sata_downshift_count
+sata_phy_error_count
 seek_error_rate
 spin_retry_count
 spin_up_time
+ssd_life_left
 start_stop_count
 temperature_case
 temperature_celsius
